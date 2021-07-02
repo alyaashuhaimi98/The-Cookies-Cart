@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="The Cookies Cart sells a variety of cookies in the world.">
+<meta name="keywords" content="The Cookies Cart, Modern Cookies, Traditional Cookies, Chips, Cake">
+<meta name="author" content="Amizatul Athira, Farah Natasha, Nur Amira Aina Alyaa">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: times new roman; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+.image {
+  display: block;
+  text-align: center;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #CA97E2;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+  text-align: center;
+}
+
+.text {
+  color: purple;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+
+<title>Special Tips for Chips</title>
+<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+</head>
+<body>
+
+<table bgcolor="#CA97E2">
+<tr>
+<td align="center"><marquee><font color="white">Free Shipping For RM100 Purchase & Above</font></marquee></td>
+</tr>
+</table>
+<br>
+<table>
+<tr>
+<td align="center"><img src="images/logo.jpeg" width="200" height="200" align="center"></td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td align="center"><i>Customer Satisfaction is Our Happiness</i><td>
+</tr>
+</table>
+<br>
+
+<div class="topnav" id="myTopnav">
+<a href="index.html">Home</a>
+<a href="group.html">Group</a>
+<div class="dropdown">
+<button class="dropbtn" onclick="mydropdown(this)">About us
+<i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content" id="myDropdown">
+<a href="history.html">Company History</a>
+<a href="founder.html">Founder</a>
+<a href="objectives.html">Objective & Goals</a>
+<a href="vision.html">Vision & Mission</a>
+<a href="chart.html">Organizational Chart</a>
+</div>
+</div>
+
+<div class="dropdown">
+<button class="dropbtn" onclick="mydropdown(this)">Product
+<i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content" id="myDropdown">
+<a href="cookies.html">Cookies</a>
+<a href="cake.html">Cake</a>
+<a href="chips.html">Chips</a>
+</div>
+</div>
+
+<div class="dropdown">
+<button class="dropbtn" onclick="mydropdown(this)">Special Tips
+<i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content" id="myDropdown">
+<a href="specialtipscookies.html" target="_blank">Cookies</a>
+<a href="specialtipschips.html" target="_blank">Chips</a>
+</div>
+</div>
+
+<div>
+<a href="contact.html">Contact us</a>
+</div>
+
+<div class="search-container">
+<form action="mailto:athirazulkifle@gmail.com">
+<input type="text" placeholder="Search..." name="search">
+<button type="submit">go!</button>
+</form>
+</div>
+</div>
+
+<script>
+
+function mydropdown(element) {
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].classList.remove('show');
+  }
+
+  element.nextSibling.nextSibling.classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<div class="numbertext">1 / 5</div>
+<img src="images/banner1.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 5</div>
+<img src="images/mubarak1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 5</div>
+<img src="images/mubarak2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">4 / 5</div>
+<img src="images/mubarak3.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">5 / 5</div>
+<img src="images/banner2.jpeg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span> 
+<span class="dot" onclick="currentSlide(2)"></span> 
+<span class="dot" onclick="currentSlide(3)"></span> 
+<span class="dot" onclick="currentSlide(4)"></span> 
+<span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); 
+}
+</script>
+
+<br>
+<h2 align="center">Special tips for Chips Product</h2>
+<p align="center">Don't judge their look but taste it first</p>
+<br>
+
+<div class="container" align="center">
+  <img src="images/specialtips4.png" alt="Bawang chips" class="image" align="center">
+  <div class="overlay">
+    <div class="text">Bawang chips have the special tips in the way of baking and shape. 
+    <li align="center">Amount of onion need to average regarding to the our baking budget.</li>
+    <li align="center">In order to making the line and shape of bawang chips, it needs 2 layer which
+first layer for onion and second layer regular flour. </li></div>
+  </div>
+</div>
+<br>
+<div class="container" align="center">
+  <img src="images/specialtips5.png" alt="Bawang chips" class="image" align="center">
+  <div class="overlay">
+    <div class="text"><li align="center">Simpul kasih need the original serunding which is from meat or chicken</li>
+    <li align="center">In fact, simpul kasih no need to fold strongly so the chips will be not hard to eat. </li></div>
+  </div>
+</div>
+<br>
+<div class="container" align="center">
+  <img src="images/specialtips6.png" alt="Small Rempeyek" class="image" align="center">
+  <div class="overlay">
+    <div class="text"><li align="center">To get a crispy rempeyek, we need to aware the structure of batter and try to fried in 2 
+piece. From that, we can recognize either the batter of rempeyek are too thick or not. If the batter are thick, we have to put some water. </li>
+ <li align="center">Otherwise, if the batter are too thin, we have to add a little flour in the batter. </li>  
+<li align="center">The small rempeyek is good when sprinkled with anchovies and nuts. </li></div>   
+  </div>
+</div>
+<br>
+<br>
+<div class="row">
+  <div class="column" style="background-color:#DFC7C1;">
+    <h2 align="center">Bawang Chips</h2>
+    <p align="center"><video width="300" height="200" controls>
+  <source src="video/onionchipstips.mp4" type="video/mp4">
+</video>
+</p>
+  </div>
+  <div class="column" style="background-color:#DFC7C1;">
+    <h2 align="center">Simpul Kasih</h2>
+    <p align="center"><video width="300" height="200" controls>
+  <source src="video/simpulkasihtips.mp4" type="video/mp4">
+</video>
+</p>
+  </div>
+  <div class="column" style="background-color:#DFC7C1;">
+    <h2 align="center">Small Rempeyek</h2>
+    <p align="center"><video width="300" height="200" controls>
+  <source src="video/smallrempeyektips.mp4" type="video/mp4">
+</video>
+</p>
+  </div>
+</div>
+
+<br>
+
+<a href="#top"><img src="images/top.jpeg" width="3%" height="5%" align="right"></a>
+
+<br>
+<br>
+
+<div class="footer">
+<sub>&#169 2021 This website is not Official Website of The Cookies Cart Company. This Website was developed for the purpose of learning XHTML & CSS only.</sub>
+</div>
+
+</body>
+</html>

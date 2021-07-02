@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="The Cookies Cart sells a variety of cookies in the world.">
+<meta name="keywords" content="The Cookies Cart, Modern Cookies, Traditional Cookies, Chips, Cake">
+<meta name="author" content="Amizatul Athira, Farah Natasha, Nur Amira Aina Alyaa">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: times new roman; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.Founder {    
+  text-align: center;
+}
+.circular--portrait {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+.founder {
+    padding: 50px;
+    text-align: center;
+    background-color: #DFC7C1;
+    color: black;
+}
+* {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+</style>
+
+<title>Founder</title>
+<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+</head>
+<body>
+
+<table bgcolor="#CA97E2">
+<tr>
+<td align="center"><marquee><font color="white">Free Shipping For RM100 Purchase & Above</font></marquee></td>
+</tr>
+</table>
+<br>
+<table>
+<tr>
+<td align="center"><img src="images/logo.jpeg" width="200" height="200" align="center"></td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td align="center"><i>Customer Satisfaction is Our Happiness</i><td>
+</tr>
+</table>
+<br>
+
+<div class="topnav" id="myTopnav">
+<a href="index.html">Home</a>
+<a href="group.html">Group</a>
+<div class="dropdown">
+<button class="dropbtn" onclick="mydropdown(this)">About us
+<i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content" id="myDropdown">
+<a href="history.html">Company History</a>
+<a href="founder.html">Founder</a>
+<a href="objectives.html">Objective & Goals</a>
+<a href="vision.html">Vision & Mission</a>
+<a href="chart.html">Organizational Chart</a>
+</div>
+</div>
+
+<div class="dropdown">
+<button class="dropbtn" onclick="mydropdown(this)">Product
+<i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content" id="myDropdown">
+<a href="cookies.html">Cookies</a>
+<a href="cake.html">Cake</a>
+<a href="chips.html">Chips</a>
+</div>
+</div>
+
+<div class="dropdown">
+<button class="dropbtn" onclick="mydropdown(this)">Special Tips
+<i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content" id="myDropdown">
+<a href="specialtipscookies.html" target="_blank">Cookies</a>
+<a href="specialtipschips.html" target="_blank">Chips</a>
+</div>
+</div>
+
+<div>
+<a href="contact.html">Contact us</a>
+</div>
+
+<div class="search-container">
+<form action="mailto:athirazulkifle@gmail.com">
+<input type="text" placeholder="Search..." name="search">
+<button type="submit">go!</button>
+</form>
+</div>
+</div>
+
+<script>
+
+function mydropdown(element) {
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].classList.remove('show');
+  }
+
+  element.nextSibling.nextSibling.classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+
+<br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<div class="numbertext">1 / 5</div>
+<img src="images/banner1.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 5</div>
+<img src="images/mubarak1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 5</div>
+<img src="images/mubarak2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">4 / 5</div>
+<img src="images/mubarak3.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">5 / 5</div>
+<img src="images/banner2.jpeg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span> 
+<span class="dot" onclick="currentSlide(2)"></span> 
+<span class="dot" onclick="currentSlide(3)"></span> 
+<span class="dot" onclick="currentSlide(4)"></span> 
+<span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); 
+}
+</script>
+
+<br>
+<div class="founder">
+  <h2 align="center">Founder of The Cookies Cart</h1>
+  <hr style="height:2px;border-width:0; width:23%;color:gray;background-color:gray" width:15%;>
+ <p> Amizatul Athira Binti Zulkifle is the original owner for The Cookies Cart.
+She begins her business with online platform until establish as a entrepreneur
+of cookies and chips. She had done many of cookies baked work from the small business
+within the online business until established a store and buildng to make cookie and chips.
+The world without cookies are empty because it ismsweet and bring the happiness to people.
+The gift of teh cookies such a brilliant idea from Miss Amizatul for the benefit to all of us.
+The reason is she started the business by helping her lovely mom to bake a cookies and cake at house. 
+Then, she follow her mom step to sell and promote many variety cookies and chips for the cosumer.
+After that, she manage to bake the cookies and others products which is cake and chips once
+the business was going well.
+  </p>
+<p> She learn many education level for developing her mom's business. In the meantime, she also
+able to make a new menu for cookies and other products. For instance chocolate cookies, keronsang cookies,
+flavor of cornflakes, and many others. She work hard, but the secret to her business is her determination and
+enhancement for her mom's cookies business. The most important is she always get a blessfulness form her lovely
+mom, Madam Zuraini. They hold feet to the fire together to manage the business. On the beginning of 2020, Miss
+Amizatul who was very successful in her career but had unfufilled ambitions had established the first store 
+and name it as The Cookies Cart. It was located at and it was the strategic places for customer to visit.
+The opening of her business were impressive and inspired many people. This is because her service are effiecient 
+and quality of the cookies.
+  </p>
+  <p>Dear customers, it is time to support our local products so that it will be spread internationally. The Cookies today will open 5 retail stores and still counting, with hopes that it will continue to be advanced in ideas and taste to fulfill customers' needs.
+</p>
+<div class="circular--portrait">
+  <img src="images/founder.jpg">
+</div>
+<br>
+  <p align="center"><strong>Amizatul Athira Binti Zulkifle</strong></p>
+  <hr style="height:2px;border-width:0; width:15%;color:gray;background-color:gray" width:10%;>
+  <p align="center"><strong>Baker Chef</strong></p>
+  </div>
+</div>
+<br>
+
+<br>
+<a href="#top"><img src="images/top.jpeg" width="3%" height="5%" align="right"></a>
+
+<br>
+<br>
+
+<div class="footer">
+<sub>&#169 2021 This website is not Official Website of The Cookies Cart Company. This Website was developed for the purpose of learning XHTML & CSS only.</sub>
+</div>
+
+</body>
+</html>

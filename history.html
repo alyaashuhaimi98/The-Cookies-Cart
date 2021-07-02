@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="The Cookies Cart sells a variety of cookies in the world.">
+<meta name="keywords" content="The Cookies Cart, Modern Cookies, Traditional Cookies, Chips, Cake">
+<meta name="author" content="Amizatul Athira, Farah Natasha, Nur Amira Aina Alyaa">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: times new roman; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+h2.page-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0 !important;
+    background: none !important;
+}
+{
+    background-image: url(images/background.png);
+}
+section[class^="section_"] {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+}
+.section_1 {
+    padding: 50px 0;
+}
+.parallax_bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+* {
+    line-height: 1.3em;
+}
+user agent stylesheet
+section {
+    display: block;
+}
+.row_container {
+    float: left;
+    width: 100%;
+    display: block;
+    clear: both;
+}
+.row_container.fullwidthcol .row {
+    max-width: 100%;
+}
+.row .one.centered {
+    margin-left: 4.25532%;
+}
+.row .five.columns {
+    width: 40.42553%;
+}
+.column:first-child, .columns:first-child, .alpha {
+    margin-left: 0;
+}
+.column, .columns {
+    background: 0 0;
+    margin-bottom: 10px;
+}
+.row .seven.columns {
+    width: 57.44681%;
+}
+.column, .columns {
+    background: 0 0;
+    margin-bottom: 10px;
+}
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+.animated {
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+.visible {
+    opacity: 1;
+}
+{
+    line-height: 1.3em;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+</style>
+
+<title>Company history</title>
+<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+</head>
+<body>
+
+<table bgcolor="#CA97E2">
+<tr>
+<td align="center"><marquee><font color="white">Free Shipping For RM100 Purchase & Above</font></marquee></td>
+</tr>
+</table>
+<br>
+<table>
+<tr>
+<td align="center"><img src="images/logo.jpeg" width="200" height="200" align="center"></td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td align="center"><i>Customer Satisfaction is Our Happiness</i><td>
+</tr>
+</table>
+<br>
+
+<div class="topnav" id="myTopnav">
+<a href="index.html">Home</a>
+<a href="group.html">Group</a>
+<div class="dropdown">
+<button class="dropbtn" onclick="mydropdown(this)">About us
+<i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content" id="myDropdown">
+<a href="history.html">Company History</a>
+<a href="founder.html">Founder</a>
+<a href="objectives.html">Objective & Goals</a>
+<a href="vision.html">Vision & Mission</a>
+<a href="chart.html">Organizational Chart</a>
+</div>
+</div>
+
+<div class="dropdown">
+<button class="dropbtn" onclick="mydropdown(this)">Product
+<i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content" id="myDropdown">
+<a href="cookies.html">Cookies</a>
+<a href="cake.html">Cake</a>
+<a href="chips.html">Chips</a>
+</div>
+</div>
+
+<div class="dropdown">
+<button class="dropbtn" onclick="mydropdown(this)">Special Tips
+<i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content" id="myDropdown">
+<a href="specialtipscookies.html" target="_blank">Cookies</a>
+<a href="specialtipschips.html" target="_blank">Chips</a>
+</div>
+</div>
+
+<div>
+<a href="contact.html">Contact us</a>
+</div>
+
+<div class="search-container">
+<form action="mailto:athirazulkifle@gmail.com">
+<input type="text" placeholder="Search..." name="search">
+<button type="submit">go!</button>
+</form>
+</div>
+</div>
+
+<script>
+
+function mydropdown(element) {
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].classList.remove('show');
+  }
+
+  element.nextSibling.nextSibling.classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<div class="numbertext">1 / 5</div>
+<img src="images/banner1.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 5</div>
+<img src="images/mubarak1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 5</div>
+<img src="images/mubarak2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">4 / 5</div>
+<img src="images/mubarak3.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">5 / 5</div>
+<img src="images/banner2.jpeg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span> 
+<span class="dot" onclick="currentSlide(2)"></span> 
+<span class="dot" onclick="currentSlide(3)"></span> 
+<span class="dot" onclick="currentSlide(4)"></span> 
+<span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); 
+}
+</script>
+
+<br>
+<h2 class="page-title" align="center">Company history</h2>
+<br>
+<section class="section_1 parallax_bg" style="background-image: url(images/background.png);">
+<div class="row_container fullwidthcol">
+<div class="row">
+<div class="one columns centered">
+<div class="row">
+<div class="five columns">
+&nbsp;</div>
+<div class="seven columns janimate hidden visible animated fadeInRight" data-animation="fadeInRight" style="background-color: rgba(255, 255, 255, 0.80);padding:3%">
+<span style="font-size:16px;line-height:1.7"><strong>The Cookies Cart </strong>Industries was established on 6th June 2021 as a Manufacturer of Traditional Cookies and Chips products. The Cookies Cart is the beginner company to serve a delicious and taste for the customer by many sweet cookies and chips.<br>
+<br>
+Our services are mainly focus on baking many cookies by 3 priorities products which is Cookies, Cake and Chips. The product was a handmake by the professional and experience worker in The Cookies Cart. Moreover, the cookies are serving with the quality and tasty ingredients only for the customer.<br>
+<br>
+The purposes of The Cookies Cart company's is to provide a yummy and tasty cookies especially for events and celebrations such as Eid Mubarak, Eid Adha, Wedding celebrations, and others<br>
+<br>
+Currently we offer the promotion to celebrate the meaningful day that book by customer by giving the best packaging, variety flavor, and additional gift. <br>
+<br>
+Let's go cart with our cookies and chips services by visit The Cookies Cart now!</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<br>
+<br>
+
+<a href="#top"><img src="images/top.jpeg" width="3%" height="5%" align="right"></a>
+
+<br>
+<br>
+<br>
+<div class="footer">
+<sub>&#169 2021 This website is not Official Website of The Cookies Cart Company. This Website was developed for the purpose of learning XHTML & CSS only.</sub>
+</div>
+
+</body>
+</html>

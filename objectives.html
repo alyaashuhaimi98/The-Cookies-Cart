@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="The Cookies Cart sells a variety of cookies in the world.">
+<meta name="keywords" content="The Cookies Cart, Modern Cookies, Traditional Cookies, Chips, Cake">
+<meta name="author" content="Amizatul Athira, Farah Natasha, Nur Amira Aina Alyaa">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: times new roman; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+<title>Objectives & Goal</title>
+<link rel="stylesheet" type="text/css" href="stylesheet/objectivesgoal.css">
+</head>
+<body>
+
+<table bgcolor="#CA97E2">
+<tr>
+<td align="center"><marquee><font color="white">Free Shipping For RM100 Purchase & Above</font></marquee></td>
+</tr>
+</table>
+<br>
+<table>
+<tr>
+<td align="center"><img src="images/logo.jpeg" width="200" height="200" align="center"></td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td align="center"><i>Customer Satisfaction is Our Happiness</i><td>
+</tr>
+</table>
+<br>
+
+<div class="topnav" id="myTopnav">
+<a href="index.html">Home</a>
+<a href="group.html">Group</a>
+<div class="dropdown">
+<button class="dropbtn" onclick="mydropdown(this)">About us
+<i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content" id="myDropdown">
+<a href="history.html">Company History</a>
+<a href="founder.html">Founder</a>
+<a href="objectives.html">Objective & Goals</a>
+<a href="vision.html">Vision & Mission</a>
+<a href="chart.html">Organizational Chart</a>
+</div>
+</div>
+
+<div class="dropdown">
+<button class="dropbtn" onclick="mydropdown(this)">Product
+<i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content" id="myDropdown">
+<a href="cookies.html">Cookies</a>
+<a href="cake.html">Cake</a>
+<a href="chips.html">Chips</a>
+</div>
+</div>
+
+<div class="dropdown">
+<button class="dropbtn" onclick="mydropdown(this)">Special Tips
+<i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content" id="myDropdown">
+<a href="specialtipscookies.html">Cookies</a>
+<a href="specialtipschips.html">Chips</a>
+</div>
+</div>
+
+<div>
+<a href="contact.html">Contact</a>
+</div>
+
+<div class="search-container">
+<form action="mailto:athirazulkifle@gmail.com">
+<input type="text" placeholder="Search..." name="search">
+<button type="submit">go!</button>
+</form>
+</div>
+</div>
+
+<script>
+
+function mydropdown(element) {
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].classList.remove('show');
+  }
+
+  element.nextSibling.nextSibling.classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<div class="numbertext">1 / 5</div>
+<img src="images/banner1.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 5</div>
+<img src="images/mubarak1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 5</div>
+<img src="images/mubarak2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">4 / 5</div>
+<img src="images/mubarak3.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">5 / 5</div>
+<img src="images/banner2.png" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span> 
+<span class="dot" onclick="currentSlide(2)"></span> 
+<span class="dot" onclick="currentSlide(3)"></span> 
+<span class="dot" onclick="currentSlide(4)"></span> 
+<span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); 
+}
+</script>
+
+<body>
+
+<div class="row">
+  <div class="column" style="background-color:white;">
+    <center><img src="https://png.pngtree.com/png-vector/20190628/ourlarge/pngtree-success-icon-for-your-project-png-image_1521431.jpg" width="300" height="300"></center>
+  </div>
+
+  <div class="column" style="background-color:white;">
+<br>
+<br>
+
+    <h2>Our Objectives</h2></font>
+    <pre><p>1. To acquiring new customers.</li>
+2. To increasing profit earning.</li>
+3. To provide best service.</li>
+</pre></p>
+  </div>
+</div>
+
+</body>
+
+<body>
+
+<div class="row">
+  <div class="column" style="background-color:#white;">
+
+<br>
+<br>
+<br>
+
+<center>
+    <h2>Our Goal</h2>
+<p>To bake the best cookies ever made!</p>
+  </div>
+
+  <div class="column" style="background-color:#white;">
+    <center><img src="https://img.icons8.com/cotton/2x/goal.png" width="300" height="300"></center>
+  </div>
+</div>
+
+</body>
+
+<br>
+
+<a href="#top"><img src="images/top.jpeg" width="3%" height="5%" align="right"></a>
+
+<br>
+<br>
+
+<div class="footer">
+<sub>&#169 2021 This website is not Official Website of The Cookies Cart Company. This Website was developed for the purpose of learning XHTML & CSS only.</sub>
+</div>
+
+</body>
+</html>
